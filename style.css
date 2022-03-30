@@ -81,8 +81,6 @@ padding-left: 2vw;
  .profile img {
     margin: 10px 20px;
      border-radius: 30%;
-     width: 200px;
-     height: 200px;
  }
  .programmingskills {
     display: flex;
@@ -111,6 +109,9 @@ margin:10px;
  }
  .skills .goals, .skillpoints {
      flex:1;
+ }
+ .felsorolas ul {
+     padding-left: 2vw;
  }
 
  @media screen and (max-width: 820px) {
