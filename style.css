@@ -95,7 +95,7 @@ margin:10px;
      text-shadow: 1px 1px 1px;
      cursor: default;
  }
- .left .contact:hover, .links:hover, .programmingskillstitle:hover {
+ .left .contact:hover, .links a:hover, .programmingskillstitle:hover {
     font-size: larger;
     text-shadow: 1px 1px 1px;
     cursor: default;
