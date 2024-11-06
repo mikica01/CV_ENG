@@ -1,129 +1,139 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-h2, h4 {
-    margin-bottom: 10px;
+h2,
+h4 {
+  margin-bottom: 10px;
 }
- p {
-     margin-bottom: 8px;
- }
+p {
+  margin-bottom: 8px;
+}
 body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(2, 53, 50);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: rgb(2, 53, 50);
 }
 main {
-    display: flex;
+  display: flex;
 }
 
 .left div:not(:last-of-type, :first-of-type, :nth-of-type(4)) {
-    border-bottom: 2px solid rgb(71, 51, 13);
+  border-bottom: 2px solid rgb(71, 51, 13);
 }
 
 .left {
-    background-color: rgb(12 104 96);
-    flex: 1;
-    border-radius: 70px;
-    box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.4);
-    background-image: linear-gradient(to bottom, rgb(71, 51, 13) 160px, rgba(0,0,0,0) 170px); 
-    border: solid 2px rgb(71, 51, 13);
+  background-color: rgb(12 104 96);
+  flex: 1;
+  border-radius: 70px;
+  box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(
+    to bottom,
+    rgb(71, 51, 13) 160px,
+    rgba(0, 0, 0, 0) 170px
+  );
+  border: solid 2px rgb(71, 51, 13);
 }
 .left div {
-    margin: 0 20px;
+  margin: 0 20px;
 }
 .left div a {
-    display:block;
-    text-decoration: none;
-    color: rgb(227 193 130);
-    font-weight: bold;
-    width:fit-content;
+  display: block;
+  text-decoration: none;
+  color: rgb(227 193 130);
+  font-weight: bold;
+  width: fit-content;
 }
 
 .introduction {
-    display: flex;
+  display: flex;
   flex-direction: column;
-    color: rgb(227 193 130);
-   height: 160px;
+  color: rgb(227 193 130);
+  height: 160px;
 }
 .introduction div {
-    margin-top: auto;
+  margin-top: auto;
 }
-    
+
 .contact {
-    padding: 30px 10px;
+  padding: 30px 10px;
 }
 .programmingskillstitle {
-    padding: 10px;
+  padding: 10px;
 }
 .profile {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
- .right {
-    flex: 3;
-    background-color: #b7b6b6;
-    box-shadow: 8px 8px 6px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 70px;
-    padding: 3vw;
-    border: solid 2px rgb(53, 53, 53)
- }
- .right div ul {
-     padding-left: 2vw;
- }
- .right div {
-    padding:20px 0px;
+.right {
+  flex: 3;
+  background-color: #b7b6b6;
+  box-shadow: 8px 8px 6px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 70px;
+  padding: 3vw;
+  border: solid 2px rgb(53, 53, 53);
 }
- 
- .aboutme p {
-padding-left: 2vw;
- }
- .profile img {
-    margin: 10px 20px;
-     border-radius: 30%;
- }
- .programmingskills {
-    display: flex;
+.right div ul {
+  padding-left: 2vw;
+}
+.right div {
+  padding: 20px 0px;
+}
+
+.aboutme p {
+  padding-left: 2vw;
+}
+.profile img {
+  margin: 10px 20px;
+  border-radius: 30%;
+}
+.programmingskills {
+  display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
- }
- .programmingskills img{
-margin:10px;
- }
- .rightarticle li:hover, .rightarticle p:hover, .goals p:hover {
-    font-size: larger;
-     cursor: default;
- }
- .left .contact a:hover, .left .contact p:hover {
-    font-size: larger;
-    cursor: default;
- }
-
-.rightarticle{
-     border-bottom: solid 2px black;
- }
- .skills {
-     display: flex;
- }
- .experience {
-    padding-bottom: 10px;
- }
- .skills .goals, .skillpoints {
-     flex:1;
- }
-
- @media screen and (max-width: 820px) {
-main {
-flex-direction: column;
 }
- .skills {
-     flex-direction: column;
- }
- .skillpoints {
+.programmingskills img {
+  margin: 10px;
+}
+.rightarticle li:hover,
+.rightarticle p:hover,
+.goals p:hover {
+  font-size: larger;
+  cursor: default;
+}
+
+.left .contact a:hover,
+.left .contact p:hover {
+  font-size: larger;
+}
+
+.left .contact a:hover {
+  cursor: pointer;
+}
+
+.rightarticle {
+  border-bottom: solid 2px black;
+}
+.skills {
+  display: flex;
+}
+.experience {
+  padding-bottom: 10px;
+}
+.skills .goals,
+.skillpoints {
+  flex: 1;
+}
+
+@media screen and (max-width: 820px) {
+  main {
+    flex-direction: column;
+  }
+  .skills {
+    flex-direction: column;
+  }
+  .skillpoints {
     border-bottom: solid 2px black;
-    
- }
- 
+  }
 }
-
-
