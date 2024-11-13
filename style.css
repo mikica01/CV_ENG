@@ -3,10 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-h2,
-h4 {
-  margin-bottom: 10px;
-}
+
 p {
   margin-bottom: 8px;
 }
@@ -15,28 +12,27 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   background-color: rgb(2, 53, 50);
 }
-main {
-  display: flex;
+
+.left .introduction,
+.contact {
+  border-right: 2px solid rgb(71, 51, 13);
 }
 
-.left div:not(:last-of-type, :first-of-type, :nth-of-type(4)) {
-  border-bottom: 2px solid rgb(71, 51, 13);
+.left li {
+  margin-left: 40px;
 }
 
 .left {
+  display: flex;
   background-color: rgb(12 104 96);
-  flex: 1;
   border-radius: 70px;
   box-shadow: 4px 4px 16px 0 rgba(0, 0, 0, 0.4);
-  background-image: linear-gradient(
-    to bottom,
-    rgb(71, 51, 13) 160px,
-    rgba(0, 0, 0, 0) 170px
-  );
+
+  overflow: visible;
   border: solid 2px rgb(71, 51, 13);
 }
-.left div {
-  margin: 0 20px;
+.left div:not(#tech-stack-content) {
+  padding: 0 20px;
 }
 .left div a {
   display: block;
@@ -47,24 +43,31 @@ main {
 }
 
 .introduction {
-  display: flex;
-  flex-direction: column;
   color: rgb(227 193 130);
-  height: 160px;
+  text-align: center;
 }
-.introduction div {
-  margin-top: auto;
+
+.introduction h2 {
+  padding: 10px 0px 0px 0px;
+}
+
+.contact p,
+.contact h2,
+.contact a {
+  padding: 0px 50px;
 }
 
 .contact {
-  padding: 30px 10px;
+  display: grid;
+  justify-content: center;
 }
-.programmingskillstitle {
-  padding: 10px;
+
+.contact h2 {
+  padding-top: 10px;
 }
+
 .profile {
   display: flex;
-  justify-content: center;
 }
 .right {
   flex: 3;
@@ -84,23 +87,65 @@ main {
 .aboutme p {
   padding-left: 2vw;
 }
-.profile img {
-  margin: 10px 20px;
+.left #profile {
+  margin: 10px 50px;
   border-radius: 30%;
+  width: 200px;
+  height: 200px;
 }
 .programmingskills {
+  width: 100%;
+}
+.programmingskills #title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0px 10px 0px;
+  height: 60px;
+}
+
+.programmingskills #title h2 {
+  padding-top: 10px;
+}
+
+.programmingskills #center-div {
+  height: calc(100% - 60px);
+  display: flex;
+  vertical-align: middle;
+}
+
+#tech-stack-content {
+  width: 80%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  margin: auto;
+  padding-bottom: 30px;
 }
-.programmingskills img {
-  margin: 10px;
+
+#tech-stack-content button {
+  height: 30px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(71, 51, 13);
+  color: rgb(227 193 130);
+  font-weight: bolder;
 }
+
+#tech-stack-content button:hover {
+  font-weight: bolder;
+  filter: brightness(120%);
+}
+
 .rightarticle li:hover,
 .rightarticle p:hover,
 .goals p:hover {
   font-size: larger;
   cursor: default;
+}
+
+.rightarticle h2 {
+  padding-bottom: 10px;
 }
 
 .left .contact a:hover,
@@ -112,7 +157,7 @@ main {
   cursor: pointer;
 }
 
-.rightarticle {
+.rightarticle:not(:last-of-type) {
   border-bottom: solid 2px black;
 }
 .skills {
@@ -127,12 +172,18 @@ main {
 }
 
 @media screen and (max-width: 820px) {
-  main {
-    flex-direction: column;
+  .left div:not(:last-of-type) {
+    border-right: none;
   }
-  .skills {
-    flex-direction: column;
+
+  .left {
+    display: block;
   }
+
+  .contact {
+    margin-bottom: 10px;
+  }
+
   .skillpoints {
     border-bottom: solid 2px black;
   }
