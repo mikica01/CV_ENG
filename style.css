@@ -8,8 +8,8 @@ p {
   margin-bottom: 8px;
 }
 body {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: "Times New Roman", Times, Georgia, serif;
+  font-size: 18px;
   background-color: rgb(2, 53, 50);
 }
 
@@ -40,6 +40,15 @@ body {
   color: rgb(227 193 130);
   font-weight: bold;
   width: fit-content;
+}
+
+.contributions,
+.tech-stack {
+  padding-bottom: 8px;
+}
+
+h4 {
+  padding-bottom: 8px;
 }
 
 .introduction {
@@ -137,20 +146,8 @@ body {
   filter: brightness(120%);
 }
 
-.rightarticle li:hover,
-.rightarticle p:hover,
-.goals p:hover {
-  font-size: larger;
-  cursor: default;
-}
-
 .rightarticle h2 {
   padding-bottom: 10px;
-}
-
-.left .contact a:hover,
-.left .contact p:hover {
-  font-size: larger;
 }
 
 .left .contact a:hover {
@@ -163,9 +160,7 @@ body {
 .skills {
   display: flex;
 }
-.experience {
-  padding-bottom: 10px;
-}
+
 .skills .goals,
 .skillpoints {
   flex: 1;
