@@ -42,6 +42,15 @@ body {
   width: fit-content;
 }
 
+.relevant {
+  margin-bottom: 10px;
+}
+
+.workplace {
+  font-size: larger;
+  padding-bottom: 5px;
+}
+
 .contributions,
 .tech-stack {
   padding-bottom: 8px;
