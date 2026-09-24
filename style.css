@@ -178,13 +178,13 @@ main {
 /* Print */
 @page {
   size: A4;
-  margin: 12mm 12mm;
+  margin: 10mm 11mm;
 }
 
 @media print {
   body {
-    font-size: 13.5px;
-    line-height: 1.42;
+    font-size: 13px;
+    line-height: 1.36;
   }
   main {
     padding: 0;
