@@ -17,29 +17,29 @@ body {
   background: var(--bg);
   color: var(--ink);
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
-  font-size: 15px;
-  line-height: 1.6;
+  font-size: 13px;
+  line-height: 1.38;
 }
 
 main {
   max-width: 780px;
   margin: 0 auto;
-  padding: 40px 32px 60px;
+  padding: 24px 22px 30px;
 }
 
 /* Header */
 .cv-header {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 20px;
   border-bottom: 2px solid var(--accent);
-  padding-bottom: 20px;
-  margin-bottom: 28px;
+  padding-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 #profile {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
@@ -47,13 +47,13 @@ main {
 
 .header-text h1 {
   margin: 0;
-  font-size: 28px;
+  font-size: 24px;
   color: var(--accent);
 }
 
 .role {
-  margin: 2px 0 10px;
-  font-size: 16px;
+  margin: 2px 0 8px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--muted);
 }
@@ -64,8 +64,8 @@ main {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 4px 20px;
-  font-size: 13px;
+  gap: 4px 18px;
+  font-size: 12px;
 }
 
 .contact-list li i {
@@ -80,94 +80,151 @@ main {
 
 /* Sections */
 .cv-section {
-  margin-bottom: 36px;
+  margin-bottom: 15px;
 }
 
 .cv-section h2 {
-  font-size: 17px;
+  font-size: 15px;
   color: var(--accent);
   border-bottom: 1px solid var(--line);
-  padding-bottom: 4px;
-  margin-bottom: 16px;
+  padding-bottom: 3px;
+  margin-bottom: 7px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
 
 .cv-section p {
-  margin: 0 0 10px;
+  margin: 0 0 6px;
 }
 
 .skill-group {
-  margin-bottom: 16px;
+  margin-bottom: 7px;
 }
 
 .skill-group-title {
-  font-size: 12.5px;
+  font-size: 11px;
   font-weight: 700;
   color: var(--muted);
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 
 .chip-wrap {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 6px;
 }
 
 .chip {
   background: var(--chip-bg);
   border: 1px solid var(--chip-border);
   color: var(--accent);
-  padding: 4px 12px;
-  border-radius: 14px;
-  font-size: 13px;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11.5px;
 }
 
 .expertise-list,
 .education-list,
 .cv-section ul {
   margin: 0;
-  padding-left: 20px;
+  padding-left: 18px;
 }
 
 .expertise-list li,
 .cv-section ul li {
-  margin-bottom: 9px;
+  margin-bottom: 4px;
 }
 
 /* Experience */
 .job {
-  margin-bottom: 30px;
+  margin-bottom: 11px;
+}
+
+.company-group {
+  margin-bottom: 11px;
+}
+
+.page-break-before {
+  break-before: page;
+  page-break-before: always;
+}
+
+.company-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  background: var(--chip-bg);
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.company-name {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.company-dates {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.role-in-company {
+  margin: 0 0 12px;
+}
+
+.role-in-company h3 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 0;
+}
+
+.role-in-company .job-meta {
+  font-size: 11px;
+  color: var(--muted);
+  font-weight: 600;
+  margin: 1px 0 5px;
+}
+
+.shared-tech {
+  margin: 4px 0 0 14px;
+  padding-left: 12px;
+  font-style: italic;
 }
 
 .job h3 {
   margin: 0;
-  font-size: 15.5px;
+  font-size: 13.5px;
   color: var(--ink);
 }
 
 .job-meta {
-  font-size: 13px;
+  font-size: 11.5px;
   color: var(--muted);
   font-weight: 600;
-  margin: 2px 0 10px;
+  margin: 1px 0 5px;
 }
 
 .job ul {
-  margin: 0 0 12px;
-  padding-left: 20px;
+  margin: 0 0 5px;
+  padding-left: 18px;
 }
 
 .job ul li {
-  margin-bottom: 8px;
+  margin-bottom: 3px;
 }
 
 .tech-stack {
-  font-size: 13px;
+  font-size: 11.5px;
   color: var(--muted);
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 .dates {
@@ -182,10 +239,6 @@ main {
 }
 
 @media print {
-  body {
-    font-size: 13px;
-    line-height: 1.36;
-  }
   main {
     padding: 0;
     max-width: 100%;
@@ -196,31 +249,5 @@ main {
   .chip {
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
-  }
-  .cv-header {
-    margin-bottom: 18px;
-    padding-bottom: 14px;
-  }
-  .cv-section {
-    margin-bottom: 18px;
-  }
-  .cv-section h2 {
-    margin-bottom: 8px;
-  }
-  .skill-group {
-    margin-bottom: 8px;
-  }
-  .expertise-list li,
-  .cv-section ul li {
-    margin-bottom: 4px;
-  }
-  .job {
-    margin-bottom: 14px;
-  }
-  .job ul {
-    margin-bottom: 6px;
-  }
-  .job ul li {
-    margin-bottom: 3px;
   }
 }
