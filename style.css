@@ -68,14 +68,19 @@ main {
   font-size: 12px;
 }
 
-.contact-list li i {
+.contact-list a.link-accent {
   color: var(--accent);
-  margin-right: 4px;
+  font-weight: 700;
 }
 
 .contact-list a {
   color: var(--ink);
   text-decoration: none;
+}
+
+.contact-list .label {
+  font-weight: 700;
+  color: var(--accent);
 }
 
 /* Sections */
@@ -193,23 +198,17 @@ main {
   margin: 1px 0 5px;
 }
 
-.shared-tech {
-  margin: 4px 0 0 14px;
-  padding-left: 12px;
-  font-style: italic;
-}
-
 .job h3 {
   margin: 0;
   font-size: 13.5px;
   color: var(--ink);
 }
 
-.job-meta {
-  font-size: 11.5px;
-  color: var(--muted);
+.role-in-company h3 .at,
+.role-in-company h3 .when {
+  font-size: 12px;
   font-weight: 600;
-  margin: 1px 0 5px;
+  color: var(--muted);
 }
 
 .job ul {
